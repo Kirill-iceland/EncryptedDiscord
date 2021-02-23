@@ -7,7 +7,7 @@
     "build": "tsc",
     "builddev": "tsc -w",
     "start": "node main.js",
-    "dev": "nodemon main.js"
+    "dev": "nodemon main.js --config nodemon.json"
   },
   "keywords": [],
   "author": "",
