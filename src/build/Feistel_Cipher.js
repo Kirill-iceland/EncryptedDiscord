@@ -85,7 +85,7 @@ exports.XOR_Buffer = XOR_Buffer;
 Buffer.prototype.remove0 = function () {
     var res;
     for (var i = 0; i < this.length; i++) {
-        res = Buffer.from(this);
+        res = Buffer.from(this).subarray(i);
         if (this[i] != 0) {
             return this.subarray(i);
         }
