@@ -92,7 +92,7 @@ declare global {
     interface Buffer {
         remove0(): Buffer;
     }
-  }
+}
 Buffer.prototype.remove0 = function (){
     let res: Buffer;
     for(var i = 0; i < this.length; i++){
