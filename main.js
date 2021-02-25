@@ -35,7 +35,7 @@ Client.on('ready', () => {
         key     = key_;
         name    = name_;
         console.log('-------------\n'.red)
-        const oldMessages = (await Client.channels.resolve(channel).messages.fetch({limit: 10})).array()
+        const oldMessages = (await Client.channels.resolve(channel).messages.fetch({limit: 100})).array()
         for(var i = oldMessages.length - 1; i >= 0; i--){
             try{ 
                 const msg = oldMessages[i]
